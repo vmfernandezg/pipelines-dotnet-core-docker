@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: vmfernandezgpipelinesdotnetcoredocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vmfernandezgpipelinesdotnetcoredocker 
+    spec:
+      containers:
+        - name: vmfernandezgpipelinesdotnetcoredocker 
+          image: vfernandezg.azurecr.io/vmfernandezgpipelinesdotnetcoredocker 
+          ports:
+          - containerPort: 80
